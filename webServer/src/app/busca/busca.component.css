@@ -1,0 +1,163 @@
+.busca {
+    text-align: center;
+    margin: 15px 0 35px;
+}
+
+.botao-confirmar {
+
+    border-radius: 10px;
+    padding: 10px 10px;
+    background: linear-gradient(75deg, rgb(47, 69, 90), rgb(11, 57, 63));
+    letter-spacing: 0.15em;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.preco {
+    padding: 0 0 15px 35px;
+}
+
+td {
+    color: white
+}
+
+.tabela-passagem {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabela-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    background-color: rgb(14, 125, 150);
+    padding: 20px 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-left: 30px;
+}
+
+.origem-container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.icone-flecha {
+    text-align: left;
+    position: relative;
+    left: -20px;
+}
+
+.origem-info {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.origem-titulo {
+    text-align: left;
+}
+
+.ida-titulo {
+    text-transform: uppercase;
+    width: 50px;
+    text-align: left;
+}
+
+.ida-info {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.volta-titulo {
+    text-align: left;
+    width: 50px;
+    text-transform: uppercase;
+}
+
+.volta-info {
+    font-weight: 600;
+}
+
+.preco {
+    font-weight: 800;
+    font-style: oblique;
+    font-size: 26px;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+}
+
+.sidenav {
+    box-sizing: border-box;
+    padding: 15px;
+    padding-top: 40px;
+    width: 140px;
+}
+
+.container-filtro {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    width: 300px;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: baseline;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.titulo-filtro {
+    margin-top: 15%;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.container-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.label {
+    font-size: 16px;
+    width: 100px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.info {
+    width: 180px;
+}
+
+.container-principal {
+    display: flex;
+}
+
+input, select {
+    background: #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+input:focus {
+    border: 2px solid #49bf9d;
+    outline: none;
+}

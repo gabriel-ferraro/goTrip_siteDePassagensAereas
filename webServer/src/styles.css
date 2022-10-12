@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu"), url(./assets/fonts/Ubuntu-Regular.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
+}

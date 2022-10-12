@@ -1,0 +1,252 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.guia-destinos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+
+@media screen and (min-width: 1440px) {
+  .guia-destinos {
+    justify-content: center;
+  }
+}
+
+.texto-banner {
+  background-color: rgb(14, 125, 150);
+  padding: 20px;
+  margin: 0 10px;
+  width: 300px;
+  border-radius: 10px;
+  color: white;
+}
+
+.texto-banner__titulo {
+  font-size: 22px;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.texto-banner__subtitulo {
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.banner {
+  background: rgb(14, 125, 150);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 20px 10px;
+}
+
+.imagem-banner {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.nome-banner {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.desc-banner {
+  text-align: justify;
+  padding: 0 10px 0 20px;
+  width: 260px;
+}
+
+.atributos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.atributos-teste {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3%;
+  position: relative;
+}
+
+.imagem-atributos {
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+.texto-atributos {
+  width: 200px;
+  height: 300px;
+  background: rgba(255, 255, 255);
+  padding: 20px 30px 40px 50px;
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+}
+
+.titulo-atributos {
+  font-size: 22px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+.descricao-atributos {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.3;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info-container__covid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 10%;
+}
+
+.foto-mascara {
+  width: 400px;
+}
+
+.caixa-texto__covid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.titulo-covid {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.texto-covid {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.5;
+  align-self: flex-end;
+}
+
+.info-container__bagagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 10%;
+}
+
+.caixa-texto__bagagem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.titulo-bagagem {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.texto-bagagem {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.5;
+  align-self: flex-end;
+}
+
+.botao-mais {
+  align-self: flex-start;
+}
+
+.link-mais {
+  text-decoration: none;
+  color: black;
+}
+
+.material-symbols-outlined {
+  position: relative;
+  top: 7px;
+}
+
+.teste-news {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(14, 125, 150);
+  padding-bottom: 20px;
+  margin-top: 60px;
+}
+
+.container-news {
+  margin: 20px 0;
+}
+
+.titulo-news {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.cadastro-news {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-nome {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  width: fit-content;
+  height: 30px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.input-email {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  width: fit-content;
+  height: 30px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.botao-enviar {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(14, 125, 150);
+  font-size: 16px;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 0 20px;
+  text-align: center;
+  margin: 10px 0;
+  color: white;
+  cursor: pointer;
+}

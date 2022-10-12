@@ -1,0 +1,25 @@
+.titulo-principal {
+    text-align: start;
+    padding-left: 40px;
+    font-weight: 500;
+}
+
+.input-item {
+    padding-left: 24px;
+}
+
+.btnSalvar {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 6px 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 24px;
+}
+
+.btnCancelar {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 6px 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 10px;
+}

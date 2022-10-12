@@ -1,0 +1,63 @@
+<div class="container-principal">
+    <div class="container-body">
+        <div class="container-filtro">
+            <h1 class="titulo-filtro">Filtre sua passagem</h1>
+            <div class="container-info">
+                <label class="label" for="origem">Origem:</label>
+                <input class="info" type="text" name="origem" [(ngModel)]="origemInput" passagens.data="passagens"
+                    passagens.searchKeyword="fieldOrigem" value="origemInput">
+            </div>
+            <div class="container-info">
+                <label class="label" for="destino">Destino</label>
+                <input class="info" type="text" name="destino" [(ngModel)]="destinoInput" passagens.data="passagens"
+                    passagens.searchKeyword="fieldDestino" value="destinoInput">
+            </div>
+            <div class="container-info">
+                <label class="label" for="preco">Preço:</label>
+                <select [(ngModel)]="fieldPreco">
+                    <option value="crescente">Crescente</option>
+                    <option value="decrescente">Descrescente</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- <label for="origem">Origem:</label>
+<input type="text" name="origem" [(ngModel)]="origemInput" passagens.data="passagens" passagens.searchKeyword="fieldOrigem" value="origemInput">
+<label for="destino">Destino</label>
+<input type="text" name="destino" [(ngModel)]="destinoInput" passagens.data="passagens" passagens.searchKeyword="fieldDestino" value="destinoInput"> -->
+
+    <!-- <select [(ngModel)]="field">
+    <option value="origem">origem</option>
+    <option value="destino">destino</option>
+</select> -->
+
+    <table class="tabela-passagem">
+        <tr class="tabela-container"
+            *ngFor="let passagem of passagens | Filter: origemInput: fieldOrigem.toLowerCase() | Filter: destinoInput: fieldDestino.toLowerCase() | orderPreco: fieldPreco.toLowerCase() ">
+            <div class="origem-container">
+                <th class="origem-titulo">Origem</th>
+                <td class="origem-info"> {{ passagem.origem }}</td>
+            </div>
+            <mat-icon class="icone-flecha">arrow_forward</mat-icon>
+            <div class="origem-container">
+                <th class="origem-titulo">Destino</th>
+                <td class="origem-info"> {{ passagem.destino }}</td>
+            </div>
+            <div>
+                <div>
+                    <th class="ida-titulo">Ida:</th>
+                    <td class="ida-info"> {{ passagem.data_ida | date: 'dd/MM/yyyy' }} </td>
+                </div>
+                <div>
+                    <th class="volta-titulo">Volta:</th>
+                    <td class="volta-info"> {{ passagem.data_volta | date: 'dd/MM/yyyy' }}</td>
+                </div>
+            </div>
+            <div>
+                <th class="preco"> R$ {{ passagem.preco }}</th>
+                <button class="botao-confirmar" (click)="comprarPassagem(passagem)">Comprar passagem</button>
+            </div>
+        </tr>
+    </table>
+</div>

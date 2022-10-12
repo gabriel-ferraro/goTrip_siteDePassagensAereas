@@ -1,0 +1,22 @@
+<div class="tituloListas">
+    <h1 class="titulo-principal">Excluir Cliente</h1>
+</div>
+<form>
+    <mat-card>
+        <mat-card-content>
+            <mat-form-field class="input-item">
+                <input matInput readonly type="text" placeholder="nome" name="nome" [(ngModel)]="cliente.nome">
+            </mat-form-field>
+            <mat-form-field class="input-item">
+                <input matInput readonly type="text" placeholder="idade" name="idade" [(ngModel)]="cliente.idade">
+            </mat-form-field>
+            <mat-form-field class="input-item">
+                <input matInput readonly type="text" placeholder="Saldo" name="saldoCarteira" [(ngModel)]="cliente.saldoCarteira">
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button class="btnSalvar" (click)="excluirCliente()" color="primary">Excluir</button>
+            <button mat-raised-button class="btnCancelar" routerLink="/admin/clientes">Cancelar</button>
+        </mat-card-actions>
+    </mat-card>
+</form>

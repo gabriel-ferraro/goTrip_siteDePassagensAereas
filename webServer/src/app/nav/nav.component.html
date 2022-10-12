@@ -1,0 +1,20 @@
+<ul>
+    <li *ngIf="authService.isAdmin()" class="admin">
+        <a [routerLink]="'/admin'" class="link admin-link"><mat-icon class="icone icone-admin">admin_panel_settings</mat-icon>Painel admin</a>
+    </li>
+    <li *ngIf="!authService.isAutenticado()" class="login">
+        <a [routerLink]="'/login'" class="link login-link"><mat-icon class="icone icone-link">login</mat-icon>Login</a>
+    </li>
+    <li *ngIf="authService.isAutenticado()">
+        <a [routerLink]="'/conta'" class="link conta-link"><mat-icon  class="icone icon-conta">account_circle</mat-icon>{{ authService.usuarioLogado.nome }}</a>
+    </li>
+    <li *ngIf="authService.isAutenticado()">
+        <a class="link" (click)="logout()"><mat-icon class="icone icone-logout">logout</mat-icon>Logout</a>
+    </li>
+    <!-- <li *ngIf="authService.isAutenticado()">
+        <a [routerLink]="'/minhasPassagens'"><mat-icon class="icone icone-logout">inventory_2</mat-icon>Minhas passagens</a>
+    </li> -->
+    <li class="ajuda">
+        <a [routerLink]="'/ajuda'" class="link ajuda-link"><mat-icon class="icone icone-ajuda">help_outline</mat-icon>Ajuda</a>
+    </li>  
+</ul>

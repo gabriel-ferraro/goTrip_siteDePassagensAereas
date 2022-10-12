@@ -1,0 +1,31 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 15px 0;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    cursor: pointer;
+}
+
+mat-icon {
+    margin-right: 6px;
+}
+
+.icone {
+    position: relative;
+    top: 5px;
+}

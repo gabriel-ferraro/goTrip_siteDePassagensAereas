@@ -1,0 +1,32 @@
+<div class="tituloListas">
+    <h1 class="titulo-principal">Excluir Viagem</h1>
+</div>
+<form>
+    <mat-card>
+        <mat-card-content>
+            <mat-form-field class="input-item">
+                <mat-label>Cliente (E-mail)</mat-label>
+                <mat-select disabled matNativeControl id="cliente" required name="cliente" [(value)]="viagem.cliente.codigo">
+                    <mat-option *ngFor="let cliente of clientes" [value]="cliente.codigo">
+                        {{cliente.usuario.email}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="input-item">
+                <mat-label>Passagens</mat-label>
+                <mat-select disabled matNativeControl id="passagem" required name="passagem" [(value)]="viagem.passagem.codigo">
+                    <mat-option *ngFor="let passagem of passagens" [value]="passagem.codigo">
+                        {{passagem.origem}}/{{passagem.destino}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="input-item">
+                <input readonly matInput type="number" placeholder="Total" name="total" [(ngModel)]="viagem.total">
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button class="btnSalvar" (click)="excluirViagem()" color="primary">Excluir</button>
+            <button mat-raised-button class="btnCancelar" routerLink="/admin/viagens">Cancelar</button>
+        </mat-card-actions>
+    </mat-card>
+</form>

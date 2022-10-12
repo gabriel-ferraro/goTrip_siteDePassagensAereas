@@ -1,0 +1,52 @@
+<div class="tituloListas">
+    <h1 class="titulo-principal">Lista de Passagens</h1>
+    <button class="btnIncluir" routerLink="/admin/passagens/incluir" color="primary">
+        <mat-icon class="material-icons-outlined">add</mat-icon>
+    </button>
+</div>
+<table class="tabela" mat-table [dataSource]="passagens">
+
+    <ng-container matColumnDef="codigo">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> ID </th>
+        <td class="container-texto" mat-cell *matCellDef="let passagem"> {{passagem.codigo}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="origem">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> Origem </th>
+        <td class="container-texto" mat-cell *matCellDef="let passagem"> {{passagem.origem}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="destino">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> Destino </th>
+        <td class="container-texto" mat-cell *matCellDef="let passagem"> {{passagem.destino}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="preco">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> Preço </th>
+        <td class="container-texto" mat-cell *matCellDef="let passagem"> {{passagem.preco | formatoReal}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="data_ida">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> Data ida </th>
+        <td class="container-texto" mat-cell *matCellDef="let passagem"> {{passagem.data_ida | date: 'dd/MM/yyyy'}} </td>
+    </ng-container>
+    <ng-container matColumnDef="data_volta">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> Data volta </th>
+        <td class="container-texto" mat-cell *matCellDef="let passagem"> {{passagem.data_volta | date: 'dd/MM/yyyy'}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="acoes">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef style="text-align: center; padding-right: 35px"> Ações </th>
+        <td class="ultima-coluna" mat-cell *matCellDef="let passagem">
+            <a class="btnEditar" routerLink="/admin/passagens/editar/{{ passagem.codigo }}">
+                <mat-icon class="material-icons-outlined">edit</mat-icon>
+            </a>
+            <a class="btnExcluir" routerLink="/admin/passagens/excluir/{{ passagem.codigo }}">
+                <mat-icon class="material-icons-outlined">clear</mat-icon>
+            </a>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="colunas"></tr>
+    <tr mat-row *matRowDef="let row; columns: colunas;"></tr>
+</table>

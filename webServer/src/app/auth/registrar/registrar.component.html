@@ -1,0 +1,44 @@
+<div class="login">
+    <div class="login-container">
+      <h4 class="titulo-usuario">Crie sua conta</h4>
+      <!-- <form id="formLogin"> -->
+      <form [formGroup]="loginForm" (ngSubmit)="registrar()" id="formLogin">  
+        <p class="titulo-login">Nome</p>
+        <div class="container-email">
+          <mat-form-field class="campo-email">
+            <mat-label>Qual é seu nome?</mat-label>
+            <input matInput formControlName="nome" required>
+          </mat-form-field>
+        </div>
+
+        <p class="titulo-login">Idade</p>
+        <div class="container-email">
+          <mat-form-field class="campo-email">
+            <mat-label>Sua idade?</mat-label>
+            <input matInput formControlName="idade" required>
+          </mat-form-field>
+        </div>
+
+        <p class="titulo-login">E-mail</p>
+        <div class="container-email">
+          <mat-form-field class="campo-email">
+            <mat-label>Insira seu e-mail</mat-label>
+            <input matInput placeholder="exemplo@exemplo.com" formControlName="email" required>
+          </mat-form-field>
+        </div>
+  
+        <p class="titulo-login">Senha</p>
+        <div class="example-container">
+          <mat-form-field>
+            <mat-label>Crie uma senha</mat-label>
+            <input class="login-input" matInput type='text' formControlName="senha" required>
+          </mat-form-field>
+        </div>
+  
+      </form>
+  
+      <button type="submit" value="Submit" form="formLogin" class="botao-login">Cadastrar</button>
+  
+    </div>
+  </div>
+  <app-footer></app-footer>

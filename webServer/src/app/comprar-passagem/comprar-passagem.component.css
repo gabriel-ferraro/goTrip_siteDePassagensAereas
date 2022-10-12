@@ -1,0 +1,150 @@
+.busca {
+    text-align: center;
+    margin: 15px 0 35px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-confirmar {
+    margin-left: 30px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+.botao-confirmar {
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(75deg, rgb(47, 69, 90), rgb(11, 57, 63));
+    letter-spacing: 0.15em;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.botao-cancelar {
+    border-radius: 10px;
+    padding: 20px;
+    background: red;
+    letter-spacing: 0.15em;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.preco {
+    padding: 0 0 15px 35px;
+}
+
+td {
+    color: white
+}
+
+.tabela-passagem {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabela-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    background-color: rgb(14, 125, 150);
+    padding: 20px 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.origem-container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.icone-flecha {
+    text-align: left;
+    position: relative;
+    left: -20px;
+}
+
+.origem-info {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.origem-titulo {
+    text-align: left;
+}
+
+.ida-titulo {
+    text-transform: uppercase;
+    width: 50px;
+    text-align: left;
+}
+
+.ida-info {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.volta-titulo {
+    text-align: left;
+    width: 50px;
+    text-transform: uppercase;
+}
+
+.volta-info {
+    font-weight: 600;
+}
+
+.preco {
+    font-weight: 800;
+    font-style: oblique;
+    font-size: 26px;
+}
+
+.qtdePessoas-titulo{
+    margin: 0 auto;
+}
+
+.qtdePessoas-valor {
+    width: 50%;
+    height: 30px;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.container-qtde{
+    align-items: center;
+    justify-content: center;
+}
+
+.container-qtde, .qtdePessoas-valor{
+    display: flex;
+}
+
+.aumentarQtde, .diminuirQtde {
+    border-radius: 10px;
+    background-color: white;
+}

@@ -1,0 +1,46 @@
+<h1 class="container">Comprar passagem</h1>
+<table class="tabela-passagem">
+    <tr class="tabela-container">
+        <div class="origem-container">
+            <th class="origem-titulo">Origem</th>
+            <td class="origem-info"> {{ passagem.origem }}</td>
+        </div>
+        <mat-icon class="icone-flecha">arrow_forward</mat-icon>
+        <div class="origem-container">
+            <th class="origem-titulo">Destino</th>
+            <td class="origem-info"> {{ passagem.destino }}</td>
+        </div>
+        <div>
+            <div>
+                <th class="ida-titulo">Ida:</th>
+                <td class="ida-info"> {{ passagem.data_ida | date: 'dd/MM/yyyy' }}</td>
+            </div>
+            <div>
+                <th class="volta-titulo">Volta:</th>
+                <td class="volta-info"> {{ passagem.data_volta | date: 'dd/MM/yyyy' }}</td>
+            </div>
+        </div>
+        <div>
+            <button class="diminuirQtde" (click)="diminuirQtdePessoas()"><mat-icon>remove</mat-icon></button>
+        </div>
+        <div>
+            <div class="container-qtde">
+                <th class="qtdePessoas-titulo">Quantidade de pessoas</th>
+            </div>
+            <div class="container-qtde">
+                <input readonly class="qtdePessoas-valor" type="number" [value]="passagem.qtde_pessoas">
+            </div>
+        </div>
+        <div>
+            <button class="aumentarQtde" (click)="aumentarQtdePessoas()"><mat-icon>add</mat-icon></button>
+        </div>
+        <div>
+            <th>Total:</th>
+            <td class="preco"> R$ {{ passagem.preco * passagem.qtde_pessoas }}</td>
+        </div>
+    </tr>
+</table>
+<div class="container">
+    <button class="botao botao-cancelar" (click)="cancelarCompra()">Cancelar</button>
+    <button class="botao botao-confirmar" (click)="confirmarCompra()">Confirmar e comprar</button>
+</div>

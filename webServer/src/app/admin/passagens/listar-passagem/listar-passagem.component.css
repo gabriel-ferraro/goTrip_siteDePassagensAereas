@@ -1,0 +1,57 @@
+.titulo-principal {
+  text-align: start;
+  padding-left: 40px;
+  font-weight: 500;
+}
+
+.btnIncluir {
+  text-align: start;
+  margin-left: 40px;
+  width: fit-content;
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: lowercase;
+  font-weight: bold;
+  border-radius: 2px;
+  border: 1px solid black;
+  padding: 2px 4px 2px 4px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.material-icons-outlined {
+  padding: 0 0 0 5px;
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+
+.tabela {
+  width: fit-content;
+  margin: auto;
+}
+
+.tabela:last-child{
+  padding-bottom: 50px;
+}
+.container-titulo {
+  padding: 0 100px 0 0;
+  text-align: start;
+  font-size: 15px;
+  border-bottom: 1px solid black;
+}
+
+.container-texto {
+  background-color: rgba(200, 200, 200, 0.4);
+  padding: 15px 0;
+}
+
+.btnEditar {
+  color: blue;
+  padding: 0 5px 0 10px;
+}
+
+.btnExcluir {
+  color: red;
+  padding: 0 5px;
+}

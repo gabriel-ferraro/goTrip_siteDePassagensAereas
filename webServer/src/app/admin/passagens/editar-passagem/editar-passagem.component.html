@@ -1,0 +1,31 @@
+<div class="tituloListas">
+    <h1 class="titulo-principal">Editar Passagem</h1>
+</div>
+<form>
+    <mat-card>
+        <mat-card-content>
+            <mat-form-field class="input-item">
+                <input matInput type="text" placeholder="Origem" name="origem" [(ngModel)]="passagem.origem">
+            </mat-form-field>
+            <mat-form-field class="input-item">
+                <input matInput type="text" placeholder="Destino" name="destino" [(ngModel)]="passagem.destino">
+            </mat-form-field>
+            <mat-form-field class="input-item">
+                <input matInput type="number" placeholder="Preço" name="preco" [(ngModel)]="passagem.preco">
+            </mat-form-field>
+            <mat-form-field class="input-item">
+                <input matInput type="number" placeholder="Qtde pessoas" name="qtde_pessoas" [(ngModel)]="passagem.qtde_pessoas">
+            </mat-form-field>
+            <mat-form-field class="input-item">
+                <input matInput type="date" placeholder="Data ida" name="data_ida" [(ngModel)]="passagem.data_ida">
+            </mat-form-field>
+            <mat-form-field class="input-item">
+                <input matInput type="date" placeholder="Data volta" name="data_volta" [(ngModel)]="passagem.data_volta">
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button class="btnSalvar" (click)="atualizarPassagem()" color="primary">Editar</button>
+            <button mat-raised-button class="btnCancelar" routerLink="/admin/passagens">Cancelar</button>
+        </mat-card-actions>
+    </mat-card>
+</form>

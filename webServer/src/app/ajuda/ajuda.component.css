@@ -1,0 +1,11 @@
+.ajuda-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+.ajuda-container img {
+    margin-bottom: 50px;
+}

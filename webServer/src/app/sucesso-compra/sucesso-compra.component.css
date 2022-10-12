@@ -1,0 +1,29 @@
+.concluido-container {
+    margin: 100px 0;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    margin-bottom: 100px;
+    font-size: 2em;
+}
+
+.link {
+    border-radius: 10px;
+    padding: 30px 30px;
+    background: linear-gradient(75deg, rgb(47, 69, 90), rgb(11, 57, 63));
+    letter-spacing: 0.15em;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}

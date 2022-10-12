@@ -1,0 +1,110 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(30, 30, 30);
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background: rgb(0, 125, 156);
+    padding: 20px 0;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.container-email {
+    color: white;
+}
+
+.campo-email {
+    width: 220px;
+}
+
+.titulo-usuario {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    padding: 15px 0;
+}
+
+.titulo-login {
+    text-align: start;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: underline;
+}
+
+.botao-olho {
+    background: rgb(0, 125, 156);
+    border: none;
+}
+
+.icone-olho {
+    background: rgb(0, 125, 156);
+}
+
+.botao-login {
+    background: rgb(30, 30, 30);
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.1ch;
+    color: white;
+    cursor: pointer;
+}
+
+.cadastro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.titulo-cadastro {
+    color: white;
+}
+
+.botao-cadastro {
+    border: none;
+    background: none;
+    color: white;
+    text-decoration: underline;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-input {
+    color: white;
+}
+
+/* .mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: rgb(255, 255, 255)!important
+    
+    ;
+body > app-root > app-login > div > div > div.form-login > div.example-container > mat-form-field > div >
+} */
+
+div.mat-form-field-underline {
+    background-color: white !important;
+}
+
+.mat-form-field-wrapper:nth-child(1) {
+    background-color: rgb(235, 255, 57);
+}
+
+/* body > material-docs-app > guide-viewer > div.docs-guide-wrapper > div > table-of-contents > div > nav > a:nth-child(6) */

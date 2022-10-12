@@ -1,0 +1,43 @@
+<div class="tituloListas">
+    <h1 class="titulo-principal">Lista de Viagens</h1>
+    <button class="btnIncluir" routerLink="/admin/viagens/incluir" color="primary">
+        <mat-icon class="material-icons-outlined">add</mat-icon>
+    </button>
+</div>
+<table class="tabela" mat-table [dataSource]="viagens">
+
+    <ng-container matColumnDef="codigo">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> ID </th>
+        <td class="container-texto" mat-cell *matCellDef="let viagem"> {{viagem.codigo}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="passagem">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> Origem/Destino </th>
+        <td class="container-texto" mat-cell *matCellDef="let viagem"> {{viagem.passagem.origem}} / {{viagem.passagem.destino}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="cliente">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> Cliente </th>
+        <td class="container-texto" mat-cell *matCellDef="let viagem"> {{viagem.cliente.nome}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="total">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> Total </th>
+        <td class="container-texto" mat-cell *matCellDef="let viagem"> {{viagem.total | formatoReal }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="acoes">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef style="text-align: center; padding-right: 35px"> Ações </th>
+        <td class="ultima-coluna" mat-cell *matCellDef="let viagem">
+            <a class="btnEditar" routerLink="/admin/viagens/editar/{{ viagem.codigo }}">
+                <mat-icon class="material-icons-outlined">edit</mat-icon>
+            </a>
+            <a class="btnExcluir" routerLink="/admin/viagens/excluir/{{ viagem.codigo }}">
+                <mat-icon class="material-icons-outlined">clear</mat-icon>
+            </a>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="colunas"></tr>
+    <tr mat-row *matRowDef="let row; columns: colunas;"></tr>
+</table>

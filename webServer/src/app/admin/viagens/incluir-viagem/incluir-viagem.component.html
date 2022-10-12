@@ -1,0 +1,32 @@
+<div class="tituloListas">
+    <h1 class="titulo-principal">Incluir Viagem</h1>
+</div>
+<form>
+    <mat-card>
+        <mat-card-content>
+            <mat-form-field class="input-item">
+                <mat-label for="cliente">Cliente (E-mail)</mat-label>
+                <select matNativeControl id="cliente" name="cliente" [(ngModel)]="viagem.cliente.codigo">
+                    <option *ngFor="let cliente of clientes" [value]="cliente.codigo">
+                        {{cliente.usuario.email}}
+                    </option>
+                </select>
+            </mat-form-field>
+            <mat-form-field class="input-item">
+                <mat-label for="passagem">Passagem (Origem/Destino)</mat-label>
+                <select matNativeControl id="passagem" name="passagem" [(ngModel)]="viagem.passagem.codigo">
+                    <option *ngFor="let passagem of passagens" [value]="passagem.codigo">
+                        {{passagem.origem}}/{{passagem.destino}}
+                    </option>
+                </select>
+            </mat-form-field>
+            <mat-form-field class="input-item">
+                <input matInput type="number" placeholder="Total" name="total" [(ngModel)]="viagem.total">
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button class="btnSalvar" (click)="salvarViagem()" color="primary">Salvar</button>
+            <button mat-raised-button class="btnCancelar" routerLink="/admin/viagens">Cancelar</button>
+        </mat-card-actions>
+    </mat-card>
+</form>

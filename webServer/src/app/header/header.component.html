@@ -1,0 +1,82 @@
+<body>
+    <div class="geral">
+        <div class="cabeca-1">
+            <a [routerLink]="''"><img src="/../assets/image/trip-logo-teste.png" alt="logo goTrip"></a>
+            <app-nav></app-nav>
+        </div>
+        <!-- <div class="head-container">
+            <div class="passagem-1">
+                <h2>Passagens Aéreas</h2>
+                <div class="botao-dir">
+                    <p class="ida-volta">Ida e volta</p>
+                    <p class="ida">Somente ida</p>
+                </div>
+            </div>
+            <div class="passagem-2">  
+                <div class="cidad">
+                    <p class="perg-saida">De onde você está saindo?</p>
+                    <p class="perg-entr">Para onde você vai?</p>
+                    <form class="busca-1">
+                        <mat-form-field class="destino-container" appearance="fill">
+                        <mat-label class="destino-text">Destino</mat-label>
+                        <input type="text"
+                                placeholder="Escolha uma opção"
+                                aria-label="Destino"
+                                matInput
+                                [formControl]="myControl"
+                                [matAutocomplete]="auto">
+                        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                            {{option}}
+                            </mat-option>
+                        </mat-autocomplete>
+                        </mat-form-field>
+                    </form>
+                    <form class="busca-2">
+                        <mat-form-field class="destino-container" appearance="fill">
+                        <mat-label class="destino-text">Destino</mat-label>
+                        <input class="busca-text" type="text"
+                                placeholder="Escolha uma opção"
+                                aria-label="Destino"
+                                matInput
+                                [formControl]="myControl"
+                                [matAutocomplete]="auto">
+                        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                            {{option}}
+                            </mat-option>
+                        </mat-autocomplete>
+                        </mat-form-field>
+                    </form>
+                </div>
+                <div class="datas">
+                    <div class="data-ida">
+                        <p>Ida</p>
+                        <mat-form-field class="data-1">
+                            <mat-label class="data-text">Escolha uma data</mat-label>
+                            <input matInput [matDatepicker]="picker">
+                            <mat-datepicker-toggle matSuffix [for]="picker">
+                            <mat-icon matDatepickerToggleIcon class="data-icon">keyboard_arrow_down</mat-icon>
+                            </mat-datepicker-toggle>
+                            <mat-datepicker class="data-line" #picker></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                    <div class="data-volta">
+                        <p>Volta</p>
+                        <mat-form-field class="data-2">
+                            <mat-label class="data-text">Escolha uma data</mat-label>
+                            <input matInput [matDatepicker]="picker2">
+                            <mat-datepicker-toggle matSuffix [for]="picker2">
+                            <mat-icon matDatepickerToggleIcon class="data-icon">keyboard_arrow_down</mat-icon>
+                            </mat-datepicker-toggle>
+                            <mat-datepicker class="data-line" #picker2></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="bot-buscar-container">
+                    <button class="botao-buscar">Buscar</button>
+                </div>
+            </div>
+        </div>     -->
+    </div>
+</body>

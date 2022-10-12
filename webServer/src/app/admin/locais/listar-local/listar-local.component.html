@@ -1,0 +1,43 @@
+<div class="tituloListas">
+    <h1 class="titulo-principal">Lista de locais</h1>
+    <button class="btnIncluir" routerLink="/admin/locais/incluir" color="primary">
+        <mat-icon class="material-icons-outlined">add</mat-icon>
+    </button>
+</div>
+<table class="tabela" mat-table [dataSource]="locais">
+
+    <ng-container matColumnDef="codigo">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> ID </th>
+        <td class="container-texto" mat-cell *matCellDef="let local"> {{local.codigo}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="capital">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> Nome </th>
+        <td class="container-texto" mat-cell *matCellDef="let local"> {{local.capital}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="descricao">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> Descrição </th>
+        <td class="container-texto" mat-cell *matCellDef="let local"> {{local.descricao}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="foto">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef> Foto </th>
+        <td class="container-texto" mat-cell *matCellDef="let local"> {{local.foto}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="acoes">
+        <th class="container-titulo" mat-header-cell *matHeaderCellDef style="text-align: center; padding-right: 35px"> Ações </th>
+        <td class="ultima-coluna" mat-cell *matCellDef="let local">
+            <a class="btnEditar" routerLink="/admin/locais/editar/{{ local.codigo }}">
+                <mat-icon class="material-icons-outlined">edit</mat-icon>
+            </a>
+            <a class="btnExcluir" routerLink="/admin/locais/excluir/{{ local.codigo }}">
+                <mat-icon class="material-icons-outlined">clear</mat-icon>
+            </a>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="colunas"></tr>
+    <tr mat-row *matRowDef="let row; columns: colunas;"></tr>
+</table>
