@@ -36,6 +36,6 @@ O projeto simula o funcionamento de um site de passagens aéreas; para comprar u
 ### Conteúdos
 
 - SPA desenvolvida em Angular
-- API construídas em Node
+- API rest em Node
 - Base de dados MongoDB
 - Autenticação JWT
