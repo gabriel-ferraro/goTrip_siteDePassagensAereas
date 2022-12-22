@@ -7,13 +7,13 @@ Athos Matovani
 
 ## Iniciar projeto
 
-- Acessar o folder APIs e rodar o comando "npm start"
+- Acessar o folder API e rodar o comando "npm start"
 - Acessar o folder webServer e rodar "npm start"
 - Acessar e rodar APIs/database/carregarDB - para gerar dados de mock
 
 ### Portas
-- Servidor de APIs: 3000
-- Servidor Angular: 4200
+- API: 3000
+- Aplicação Angular: 4200
 - BD: 27017
 
 ### Sobre o projeto
